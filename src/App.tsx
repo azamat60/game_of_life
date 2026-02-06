@@ -259,7 +259,7 @@ function App() {
   const [isRunning, setIsRunning] = useState(false);
   const [speed, setSpeed] = useState(DEFAULT_SPEED);
   const [generation, setGeneration] = useState(0);
-  const [theme, setTheme] = useState<"light" | "dark">("light");
+  const [theme, setTheme] = useState<"light" | "dark">("dark");
   const [isToroidal, setIsToroidal] = useState(true);
   const [activeCategoryId, setActiveCategoryId] = useState(DEFAULT_CATEGORY_ID);
   const [activePatternId, setActivePatternId] = useState(DEFAULT_PATTERN_ID);
@@ -475,6 +475,8 @@ function App() {
           )}
         </div>
       </section>
+
+      <footer className="site-credit">Developed by Azamat Altymyshev</footer>
     </main>
   );
 }

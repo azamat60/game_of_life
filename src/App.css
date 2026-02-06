@@ -298,6 +298,17 @@
   animation: appear 520ms ease;
 }
 
+.site-credit {
+  grid-column: 1 / -1;
+  margin: 0;
+  text-align: center;
+  color: var(--muted);
+  font-size: 0.84rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  opacity: 0.9;
+}
+
 .board {
   display: grid;
   gap: 2px;
@@ -353,5 +364,9 @@
 
   .pattern-list {
     max-height: 150px;
+  }
+
+  .site-credit {
+    order: 3;
   }
 }
