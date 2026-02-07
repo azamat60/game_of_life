@@ -80,3 +80,7 @@ This keeps code style consistent and reduces accidental issues in commit history
 - Pattern import/export.
 - Save and load custom scenes.
 - Deeper evolution analytics and insights.
+
+## Author
+
+Azamat Altymyshev
