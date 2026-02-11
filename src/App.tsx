@@ -1,4 +1,5 @@
 import { useEffect, useMemo, useRef, useState } from "react";
+import { Pause, Play, Shuffle, SkipForward, Trash2 } from "lucide-react";
 import "./App.css";
 
 type Cell = boolean;
@@ -347,19 +348,31 @@ function App() {
 
         <div className="controls">
           <button
-            className={`btn ${isRunning ? "btn-warn" : "btn-primary"}`}
+            className={`btn ${isRunning ? "btn-pause" : "btn-start"}`}
             onClick={() => setIsRunning((prev) => !prev)}
           >
-            {isRunning ? "Pause" : "Start"}
+            <span className="btn-content">
+              {isRunning ? <Pause size={16} /> : <Play size={16} />}
+              {isRunning ? "Pause" : "Start"}
+            </span>
           </button>
-          <button className="btn btn-neutral" onClick={handleStep} disabled={isRunning}>
-            Step
+          <button className="btn btn-step" onClick={handleStep} disabled={isRunning}>
+            <span className="btn-content">
+              <SkipForward size={16} />
+              Step
+            </span>
           </button>
-          <button className="btn btn-neutral" onClick={handleRandom}>
-            Random
+          <button className="btn btn-random" onClick={handleRandom}>
+            <span className="btn-content">
+              <Shuffle size={16} />
+              Random
+            </span>
           </button>
-          <button className="btn btn-neutral" onClick={handleClear}>
-            Clear
+          <button className="btn btn-clear" onClick={handleClear}>
+            <span className="btn-content">
+              <Trash2 size={16} />
+              Clear
+            </span>
           </button>
         </div>
 
