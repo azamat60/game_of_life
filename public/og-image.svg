@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-label="Conway Game of Life preview">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0d1524" />
+      <stop offset="100%" stop-color="#1e2a45" />
+    </linearGradient>
+    <linearGradient id="live" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ff8a45" />
+      <stop offset="100%" stop-color="#ffc461" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)" />
+
+  <g opacity="0.18" fill="#5f7396">
+    <rect x="76" y="76" width="20" height="20" rx="4" />
+    <rect x="106" y="76" width="20" height="20" rx="4" />
+    <rect x="136" y="76" width="20" height="20" rx="4" />
+    <rect x="166" y="76" width="20" height="20" rx="4" />
+    <rect x="196" y="76" width="20" height="20" rx="4" />
+    <rect x="76" y="106" width="20" height="20" rx="4" />
+    <rect x="106" y="106" width="20" height="20" rx="4" />
+    <rect x="136" y="106" width="20" height="20" rx="4" />
+    <rect x="166" y="106" width="20" height="20" rx="4" />
+    <rect x="196" y="106" width="20" height="20" rx="4" />
+    <rect x="76" y="136" width="20" height="20" rx="4" />
+    <rect x="106" y="136" width="20" height="20" rx="4" />
+    <rect x="136" y="136" width="20" height="20" rx="4" />
+    <rect x="166" y="136" width="20" height="20" rx="4" />
+    <rect x="196" y="136" width="20" height="20" rx="4" />
+  </g>
+
+  <g fill="url(#live)">
+    <rect x="360" y="210" width="38" height="38" rx="8" />
+    <rect x="398" y="248" width="38" height="38" rx="8" />
+    <rect x="322" y="286" width="38" height="38" rx="8" />
+    <rect x="360" y="286" width="38" height="38" rx="8" />
+    <rect x="398" y="286" width="38" height="38" rx="8" />
+  </g>
+
+  <text x="470" y="270" fill="#f3f7ff" font-size="64" font-family="Arial, sans-serif" font-weight="700">
+    Conway's Game of Life
+  </text>
+  <text x="470" y="330" fill="#b5c3dc" font-size="34" font-family="Arial, sans-serif">
+    Interactive Cellular Automata Simulator
+  </text>
+  <text x="470" y="388" fill="#8ea4c8" font-size="28" font-family="Arial, sans-serif">
+    Patterns • Speed Control • Theme Switch • Live Stats
+  </text>
+</svg>

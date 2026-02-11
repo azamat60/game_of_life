@@ -1,0 +1,16 @@
+{
+  "name": "Conway's Game of Life Simulator",
+  "short_name": "Game of Life",
+  "description": "Interactive Conway's Game of Life simulator with pattern presets and real-time controls.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0e1626",
+  "theme_color": "#111a29",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}
