@@ -398,8 +398,13 @@ function App() {
           </label>
         </section>
 
-        <label className="range-control" htmlFor="speed">
-          <span>Speed: {speed} ms</span>
+        <div className="range-control">
+          <div className="range-header">
+            <label className="range-label" htmlFor="speed">
+              Speed
+            </label>
+            <span className="range-value">{Math.round(1000 / speed)} gen/s</span>
+          </div>
           <input
             id="speed"
             type="range"
@@ -408,7 +413,11 @@ function App() {
             value={speed}
             onChange={(event) => setSpeed(Number(event.target.value))}
           />
-        </label>
+          <div className="range-ticks">
+            <span>Fast</span>
+            <span>Slow</span>
+          </div>
+        </div>
 
         <section className="pattern-library">
           <div className="pattern-library-head">
@@ -458,13 +467,25 @@ function App() {
         </section>
 
         <div className="stats">
-          <p>Generation: {generation}</p>
-          <p>Alive cells: {aliveCount}</p>
-          <p>Density: {density}%</p>
-          <p>Edges: {isToroidal ? "Toroidal" : "Bounded"}</p>
-          <p>
-            Grid: {ROWS} x {COLS}
-          </p>
+          <div className="stat-card">
+            <span className="stat-label">
+              Generation
+              {isRunning && <span className="live-dot" />}
+            </span>
+            <span className="stat-value">{generation}</span>
+          </div>
+          <div className="stat-card">
+            <span className="stat-label">Alive cells</span>
+            <span className="stat-value">{aliveCount}</span>
+          </div>
+          <div className="stat-card">
+            <span className="stat-label">Density</span>
+            <span className="stat-value">{density}%</span>
+          </div>
+          <div className="stat-card">
+            <span className="stat-label">Edges</span>
+            <span className="stat-value">{isToroidal ? "Toroidal" : "Bounded"}</span>
+          </div>
         </div>
       </section>
 

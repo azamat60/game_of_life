@@ -1,5 +1,6 @@
 :root {
-  font-family: "Avenir Next", "Gill Sans", "Trebuchet MS", sans-serif;
+  font-family: "Inter", "Avenir Next", sans-serif;
+  font-feature-settings: "cv02", "cv03", "cv04", "cv11";
   line-height: 1.5;
   font-weight: 400;
 }
