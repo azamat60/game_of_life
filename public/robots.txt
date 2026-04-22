@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://azamat60.github.io/game_of_life/sitemap.xml
+Sitemap: https://www.azamatdev.com/game-of-life/sitemap.xml
